@@ -1,2 +1,1 @@
-# guzelliksey
-Güzelliksey Güzellik Merkezi Web Sitesi (Orkestra Ajanı Tarafından Üretildi)
+output\proje_20261014_105354_guzelliksey_isimli_guzellik_me\guzelliksey
