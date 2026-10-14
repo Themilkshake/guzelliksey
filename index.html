@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Güzelliksey | Güzellik Merkezi İstanbul — Randevu Al</title>
+  <meta name="description" content="İstanbul'da uzman kadrosuyla cilt bakımı, lazer epilasyon, makyaj, saç ve tırnak hizmetleri. Online randevu alın, ücretsiz danışma fırsatını kaçırmayın." />
+  <meta property="og:title" content="Güzelliksey | Güzellik Merkezi İstanbul" />
+  <meta property="og:description" content="Uzman ekip, hijyenik ortam, kişiye özel bakım planları. Hemen online randevu alın." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Güzelliksey",
+    "description": "Güzellik ve bakım merkezi: cilt bakımı, lazer epilasyon, makyaj, saç, tırnak.",
+    "telephone": "[TELEFON]",
+    "address": { "@type": "PostalAddress", "addressLocality": "İstanbul", "streetAddress": "[ADRES]" },
+    "openingHours": "Mo-Sa 09:00-19:00"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand">güzellik<span>sey</span></a>
+      <nav class="nav-desktop" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html" aria-current="page">Ana Sayfa</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a class="btn btn--primary btn--sm" href="randevu.html">Randevu Al</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobil-menu" aria-label="Menüyü aç/kapat">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="nav-drawer" id="mobil-menu" aria-label="Mobil menü">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hizmetler.html">Hizmetler</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+    <a class="btn btn--primary" href="randevu.html">Randevu Al</a>
+  </nav>
+
+  <main id="icerik">
+    <!-- ===== 1. Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Güzellik &amp; Bakım Merkezi</p>
+        <h1 class="hero__title">Parlayın: uzman ellerde kişiye özel güzellik deneyimi</h1>
+        <p class="hero__lead">Cilt bakımından lazer epilasyona, altı kategoride profesyonel hizmet — hijyenik ortamda, size özel planlanan randevularla.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="randevu.html">Hemen Randevu Al</a>
+          <a class="btn btn--ghost" href="hizmetler.html">Hizmetleri Keşfet</a>
+        </div>
+        <p class="hero__scroll" aria-hidden="true">↓ keşfedin</p>
+      </div>
+    </section>
+
+    <!-- ===== 2. Güven Şeridi ===== -->
+    <section class="trust section" style="padding-block: var(--space-5);">
+      <div class="container trust__list">
+        <div class="trust__item"><span class="trust__icon">✦</span> Uzman ekip</div>
+        <div class="trust__item"><span class="trust__icon">✚</span> Hijyen sertifikası</div>
+        <div class="trust__item"><span class="trust__icon">◈</span> Kaliteli ürün markaları</div>
+        <div class="trust__item"><span class="trust__icon">✓</span> Memnuniyet garantisi</div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Hizmet Öne Çıkanlar ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Hizmetler</p>
+          <h2 class="section__title">Sizin için seçtiklerimiz</h2>
+          <p class="section__lead">Neden Güzelliksey? Kişiye özel planlama, şeffaf fiyat, hijyen önceliği, uzman kadro ve takip eden bakım süreci.</p>
+        </div>
+        <div class="card-grid" id="oz-hizmetler"><!-- JS ile doldurulur --></div>
+        <p style="margin-top: var(--space-6);"><a class="btn btn--dark" href="hizmetler.html">Tüm Hizmetler &amp; Fiyatlar</a></p>
+      </div>
+    </section>
+
+    <!-- ===== 4. Öncesi / Sonrası ===== -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Sonuçlar</p>
+          <h2 class="section__title">Öncesi / Sonrası</h2>
+          <p class="section__lead">Kolu sürükleyerek karşılaştırmayı görün. Gerçek uygulama görselleri yayından önce eklenecektir.</p>
+        </div>
+        <div class="ba-slider" style="max-width: 720px;">
+          <div class="ba-slider__pane ba-slider__before">Öncesi</div>
+          <div class="ba-slider__pane ba-slider__after">Sonrası</div>
+          <span class="ba-slider__tag ba-slider__tag--before">Öncesi</span>
+          <span class="ba-slider__tag ba-slider__tag--after">Sonrası</span>
+          <div class="ba-slider__handle" role="slider" tabindex="0" aria-label="Karşılaştırma kolu" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Nasıl İlerliyoruz ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head text-center">
+          <p class="eyebrow">Süreç</p>
+          <h2 class="section__title">Nasıl ilerliyoruz?</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="step__num"></span><h3>Online randevu</h3><p>3 adımda, saniyeler içinde randevu oluşturun.</p></div>
+          <div class="step"><span class="step__num"></span><h3>Ücretsiz danışma</h3><p>İhtiyacınızı dinleyelim, size özel plan hazırlayalım.</p></div>
+          <div class="step"><span class="step__num"></span><h3>Uygulama + takip</h3><p>Uygulama sonrası bakım önerileriyle yanınızdayız.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. Müşteri Yorumları ===== -->
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Yorumlar</p>
+          <h2 class="section__title">Misafirlerimiz ne diyor?</h2>
+        </div>
+        <div class="carousel">
+          <article class="review">
+            <p class="review__stars" aria-label="5 üzerinden 5 yıldız">★★★★★</p>
+            <p>"Cilt bakımı sonrası cildim gerçekten canlandı. Danışma aşamasında detaylı bilgilendirme yaptılar."</p>
+            <p class="review__meta">A. K. <span class="tag">Cilt Bakımı</span></p>
+          </article>
+          <article class="review">
+            <p class="review__stars" aria-label="5 üzerinden 5 yıldız">★★★★★</p>
+            <p>"Lazer epilasyon süreci çok hijyenik ve profesyonel ilerledi. Randevu saatine birebir uyuluyor."</p>
+            <p class="review__meta">B. Y. <span class="tag">Lazer Epilasyon</span></p>
+          </article>
+          <article class="review">
+            <p class="review__stars" aria-label="5 üzerinden 5 yıldız">★★★★★</p>
+            <p>"Düğün makyajım tam istediğim gibi oldu; gün boyu bozulmadan kaldı. Teşekkürler ekip!"</p>
+            <p class="review__meta">D. S. <span class="tag">Makyaj</span></p>
+          </article>
+        </div>
+        <p style="font-size: var(--fs-small); color: rgba(43,43,43,.6); margin-top: var(--space-3);">Not: Yorum örnekleri tanıtım amaçlıdır; gerçek müşteri yorumlarıyla değiştirilmelidir.</p>
+      </div>
+    </section>
+
+    <!-- ===== 7. Ekip ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head text-center">
+          <p class="eyebrow">Ekibimiz</p>
+          <h2 class="section__title">Uzman kadromuz</h2>
+        </div>
+        <div class="team-grid">
+          <div class="member"><div class="member__photo">E</div><h3>Uzm. Estetisyen</h3><p class="member__role">Cilt Bakımı</p></div>
+          <div class="member"><div class="member__photo">L</div><h3>Lazer Uzmanı</h3><p class="member__role">Lazer Epilasyon</p></div>
+          <div class="member"><div class="member__photo">M</div><h3>Makyaj Artisti</h3><p class="member__role">Makyaj</p></div>
+          <div class="member"><div class="member__photo">S</div><h3>Saç Stilisti</h3><p class="member__role">Saç</p></div>
+        </div>
+        <p class="text-center" style="margin-top: var(--space-6);"><a class="btn btn--ghost" href="hakkimizda.html">Ekibi Tanıyın →</a></p>
+      </div>
+    </section>
+
+    <!-- ===== 8. Son CTA Bandı ===== -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="section__title">Sizin için uygun zamanı birlikte bulalım</h2>
+        <a class="btn btn--primary" href="randevu.html">Hemen Randevu Al</a>
+        <p class="cta-band__meta">
+          <a href="tel:+905000000000">📞 [TELEFON]</a> · Pzt–Cmt 09:00–19:00 · <a href="iletisim.html">[ADRES, İSTANBUL]</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="color:#fff;">güzellik<span>sey</span></a>
+        <p style="margin-top: var(--space-3); font-size: var(--fs-small);">İstanbul'da ulaşılabilir lüks konseptinde, hijyen ve uzmanlık odaklı güzellik &amp; bakım merkezi.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div>
+        <h3>Hizmetler</h3>
+        <ul>
+          <li><a href="hizmetler.html">Cilt Bakımı</a></li>
+          <li><a href="hizmetler.html">Lazer Epilasyon</a></li>
+          <li><a href="hizmetler.html">Makyaj</a></li>
+          <li><a href="hizmetler.html">Saç</a></li>
+          <li><a href="hizmetler.html">Manikür &amp; Pedikür</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hızlı Erişim</h3>
+        <ul>
+          <li><a href="randevu.html">Randevu Al</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>İletişim</h3>
+        <ul>
+          <li>[ADRES] / İstanbul</li>
+          <li><a href="tel:+905000000000">[TELEFON]</a></li>
+          <li><a href="mailto:info@guzelliksey.com">info@guzelliksey.com</a></li>
+          <li>Pzt–Cmt: 09:00–19:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <a href="#">KVKK / Gizlilik</a><a href="#">Çerez Politikası</a>
+      <span>© <span id="yil"></span> Güzelliksey</span>
+    </div>
+  </footer>
+
+  <!-- Mobil alt bar -->
+  <nav class="mobile-bar" aria-label="Hızlı işlemler">
+    <a href="randevu.html" class="is-cta">📅 Randevu</a>
+    <a href="https://wa.me/905000000000">💬 WhatsApp</a>
+    <a href="iletisim.html">📍 Yol Tarifi</a>
+  </nav>
+
+  <!-- Yüzen WhatsApp -->
+  <a class="fab" href="https://wa.me/905000000000" aria-label="WhatsApp ile yazın">💬</a>
+
+  <!-- Çerez bandı -->
+  <div class="cookie-bar" role="dialog" aria-label="Çerez onayı">
+    <p>Deneyiminizi iyileştirmek için çerez kullanıyoruz. Onaylayarak çerez politikamızı kabul etmiş olursunuz.</p>
+    <button class="btn btn--primary btn--sm" data-cookie-choice="accepted">Kabul Et</button>
+    <button class="btn btn--ghost btn--sm" style="border-color:#fff;color:#fff;" data-cookie-choice="rejected">Reddet</button>
+  </div>
+
+  <script src="js/site.js"></script>
+  <script>
+    // Ana sayfa hizmet kartları
+    document.addEventListener("DOMContentLoaded", () => {
+      const wrap = document.getElementById("oz-hizmetler");
+      if (wrap && window.SERVICES) {
+        wrap.innerHTML = SERVICES.slice(0, 3).map((s) => `
+          <article class="card">
+            <div class="card__media" aria-hidden="true">✦</div>
+            <div class="card__body">
+              <h3>${s.name}</h3>
+              <p>${s.desc}</p>
+              <p class="card__price">başlangıç ${formatPrice(s.price)}</p>
+              <a class="card__link" href="hizmetler.html#${s.id}">Detayı Gör</a>
+            </div>
+          </article>`).join("");
+      }
+      const y = document.getElementById("yil");
+      if (y) y.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

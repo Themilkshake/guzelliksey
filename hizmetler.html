@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hizmetler &amp; Fiyatlar | Güzelliksey Güzellik Merkezi</title>
+  <meta name="description" content="Cilt bakımı, lazer epilasyon, makyaj, saç, manikür-pedikür ve bölgesel incelme hizmetleri. Süre ve başlangıç fiyatlarıyla şeffaf hizmet listesi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand">güzellik<span>sey</span></a>
+      <nav class="nav-desktop" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hizmetler.html" aria-current="page">Hizmetler</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a class="btn btn--primary btn--sm" href="randevu.html">Randevu Al</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobil-menu" aria-label="Menüyü aç/kapat"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="nav-drawer" id="mobil-menu" aria-label="Mobil menü">
+    <a href="index.html">Ana Sayfa</a><a href="hizmetler.html">Hizmetler</a><a href="hakkimizda.html">Hakkımızda</a>
+    <a href="galeri.html">Galeri</a><a href="iletisim.html">İletişim</a><a class="btn btn--primary" href="randevu.html">Randevu Al</a>
+  </nav>
+
+  <main id="icerik">
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Hizmetler</p>
+          <h1>Hizmetlerimiz ve Fiyatlar</h1>
+          <p class="section__lead">Altı kategoride profesyonel güzellik hizmetleri. Fiyatlar başlangıç tutarıdır; kesin fiyat ücretsiz ön görüşme sonrası belirlenir.</p>
+        </div>
+
+        <!-- Arama -->
+        <div class="field" style="max-width: 420px;">
+          <label for="ara">Hizmet ara</label>
+          <input type="search" id="ara" placeholder="Örn: lazer, makyaj, cilt…" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Kategori filtresi (sticky) -->
+    <div class="filter-bar">
+      <div class="container" id="filtreler" style="display:flex; gap: var(--space-2); overflow-x:auto;"></div>
+    </div>
+
+    <section style="padding-bottom: var(--space-8);">
+      <div class="container">
+        <div class="accordion" id="hizmet-listesi"></div>
+      </div>
+    </section>
+
+    <!-- Paketler -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Kampanyalar</p>
+          <h2 class="section__title">Paketler</h2>
+        </div>
+        <div class="card-grid">
+          <article class="package">
+            <span class="badge">Popüler</span>
+            <h3>Düğün Paketi</h3>
+            <ul style="margin: var(--space-4) 0;">
+              <li style="padding-left:1.2em;position:relative;"><span style="position:absolute;left:0;color:var(--color-accent);">✓</span> Gelin makyajı + prova</li>
+              <li style="padding-left:1.2em;position:relative;"><span style="position:absolute;left:0;color:var(--color-accent);">✓</span> Cilt bakımı kürü (3 seans)</li>
+              <li style="padding-left:1.2em;position:relative;"><span style="position:absolute;left:0;color:var(--color-accent);">✓</span> Manikür + jel oje</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="randevu.html?hizmet=makyaj">Bu Paketi Seç</a>
+          </article>
+          <article class="package">
+            <span class="badge badge--accent">Avantajlı</span>
+            <h3>Yaz Paketi — Lazer</h3>
+            <ul style="margin: var(--space-4) 0;">
+              <li style="padding-left:1.2em;position:relative;"><span style="position:absolute;left:0;color:var(--color-accent);">✓</span> 6 seans bölgesel lazer</li>
+              <li style="padding-left:1.2em;position:relative;"><span style="position:absolute;left:0;color:var(--color-accent);">✓</span> Ücretsiz danışma</li>
+              <li style="padding-left:1.2em;position:relative;"><span style="position:absolute;left:0;color:var(--color-accent);">✓</span> Bakım seti hediye</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="randevu.html?hizmet=lazer-epilasyon">Bu Paketi Seç</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SSS -->
+    <section class="section">
+      <div class="container" style="max-width: 800px;">
+        <div class="section__head">
+          <p class="eyebrow">SSS</p>
+          <h2 class="section__title">Sık Sorulan Sorular</h2>
+        </div>
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__button" aria-expanded="false" aria-controls="sss1"><span class="accordion__title">Randevuyu nasıl iptal edebilirim?</span><span class="accordion__chev">▾</span></button>
+            <div class="accordion__panel" id="sss1"><div class="accordion__inner"><p>Randevunuzdan en az 24 saat önce telefon veya WhatsApp ile ücretsiz iptal/erteleme yapabilirsiniz.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__button" aria-expanded="false" aria-controls="sss2"><span class="accordion__title">Ön görüşme ücretli mi?</span><span class="accordion__chev">▾</span></button>
+            <div class="accordion__panel" id="sss2"><div class="accordion__inner"><p>Hayır. Tüm hizmetlerde ihtiyaç analizi ve planlama için ön görüşme ücretsizdir.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__button" aria-expanded="false" aria-controls="sss3"><span class="accordion__title">Lazer epilasyon kaç seans sürer?</span><span class="accordion__chev">▾</span></button>
+            <div class="accordion__panel" id="sss3"><div class="accordion__inner"><p>Bölge, cilt ve kıl yapısına göre değişmekle birlikte genellikle 6–8 seans planlanır; net plan ön görüşmede belirlenir.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__button" aria-expanded="false" aria-controls="sss4"><span class="accordion__title">Hijyen önlemleriniz neler?</span><span class="accordion__chev">▾</span></button>
+            <div class="accordion__panel" id="sss4"><div class="accordion__inner"><p>Tek kullanımlık malzemeler, sterilizasyon protokolleri ve düzenli alan dezenfeksiyonu uygulanır.</p></div></div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__button" aria-expanded="false" aria-controls="sss5"><span class="accordion__title">Hediye çeki var mı?</span><span class="accordion__chev">▾</span></button>
+            <div class="accordion__panel" id="sss5"><div class="accordion__inner"><p>İletişim sayfasından bize ulaşarak dilediğiniz tutarda hediye çeki oluşturabilirsiniz.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="color:#fff;">güzellik<span>sey</span></a>
+        <p style="margin-top: var(--space-3); font-size: var(--fs-small);">Uzmanlık ve hijyen odaklı güzellik &amp; bakım merkezi.</p>
+      </div>
+      <div><h3>Hizmetler</h3><ul><li><a href="hizmetler.html">Cilt Bakımı</a></li><li><a href="hizmetler.html">Lazer Epilasyon</a></li><li><a href="hizmetler.html">Makyaj</a></li><li><a href="hizmetler.html">Saç</a></li></ul></div>
+      <div><h3>Hızlı Erişim</h3><ul><li><a href="randevu.html">Randevu Al</a></li><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+      <div><h3>İletişim</h3><ul><li>[ADRES] / İstanbul</li><li><a href="tel:+905000000000">[TELEFON]</a></li><li>Pzt–Cmt: 09:00–19:00</li></ul></div>
+    </div>
+    <div class="container footer-legal"><a href="#">KVKK / Gizlilik</a><a href="#">Çerez Politikası</a><span>© 2025 Güzelliksey</span></div>
+  </footer>
+
+  <nav class="mobile-bar" aria-label="Hızlı işlemler">
+    <a href="randevu.html" class="is-cta">📅 Randevu</a>
+    <a href="https://wa.me/905000000000">💬 WhatsApp</a>
+    <a href="iletisim.html">📍 Yol Tarifi</a>
+  </nav>
+  <a class="fab" href="https://wa.me/905000000000" aria-label="WhatsApp ile yazın">💬</a>
+
+  <script src="js/site.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filt = document.getElementById("filtreler");
+      const liste = document.getElementById("hizmet-listesi");
+      const ara = document.getElementById("ara");
+      let aktifCat = "hepsi";
+
+      function render() {
+        const q = (ara.value || "").toLocaleLowerCase("tr");
+        const items = SERVICES.filter((s) =>
+          (aktifCat === "hepsi" || s.cat === aktifCat) &&
+          (!q || s.name.toLocaleLowerCase("tr").includes(q) || s.desc.toLocaleLowerCase("tr").includes(q)));
+        liste.innerHTML = items.length ? items.map((s) => `
+          <div class="accordion__item" id="${s.id}">
+            <button class="accordion__button" aria-expanded="false" aria-controls="p-${s.id}">
+              <span class="accordion__title">${s.name} <small style="font-weight:400;color:rgba(43,43,43,.6);">· ${s.duration} dk</small></span>
+              <span class="accordion__price">${formatPrice(s.price)}</span>
+              <span class="accordion__chev">▾</span>
+            </button>
+            <div class="accordion__panel" id="p-${s.id}"><div class="accordion__inner">
+              <p>${s.desc}</p>
+              <ul>${s.subs.map((x) => `<li>${x}</li>`).join("")}</ul>
+              <a class="btn btn--primary btn--sm" href="randevu.html?hizmet=${s.id}">Bu Hizmeti Seç →</a>
+              <a class="btn btn--ghost btn--sm" href="https://wa.me/905000000000?text=${encodeURIComponent('Merhaba, ' + s.name + ' hizmeti hakkında fiyat bilgisi almak istiyorum.')}">Fiyat için Danış</a>
+            </div></div>
+          </div>`).join("") :
+          `<p style="padding: var(--space-5) 0;">Aramanızla eşleşen hizmet bulunamadı. <a href="iletisim.html" style="color:var(--color-primary);font-weight:600;">Bize ulaşın</a>.</p>`;
+        initAccordions(liste);
+      }
+
+      CATEGORIES.forEach((c, i) => {
+        const b = document.createElement("button");
+        b.className = "chip"; b.textContent = c.label;
+        b.setAttribute("aria-pressed", String(i === 0));
+        b.addEventListener("click", () => {
+          aktifCat = c.id;
+          filt.querySelectorAll(".chip").forEach((x) => x.setAttribute("aria-pressed", "false"));
+          b.setAttribute("aria-pressed", "true");
+          render();
+        });
+        filt.appendChild(b);
+      });
+      ara.addEventListener("input", render);
+      render();
+
+      // #hash ile açılış (ana sayfa "Detayı Gör" linkleri)
+      if (location.hash) {
+        const el = document.querySelector(location.hash + " .accordion__button");
+        if (el) { el.click(); el.scrollIntoView({ behavior: "smooth", block: "center" }); }
+      }
+    });
+  </script>
+</body>
+</html>
